@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GraysCar</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+  <header>
+  <nav class="navbar bg-dark" data-bs-theme="dark">
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <a class="btn btn-success" href="/" role="button">GrayCarHoome</a>
+      <a class="btn btn-success" href="/" role="button">Cars</a>
+      <a class="btn btn-success" href="/organizations" role="button">Organizas</a>
+      <a class="btn btn-success" href="/" role="button">Tables</a>
+    </div>
+    <div class="">
+        <span class="navbar-brand mb-0 h1">Hello Guest!</span>
+        <a class="btn btn-success" href="/users/new" role="button">Sign in</a>
+    <div>
+  </nav>
+  </header>
+  <body back>
+    <%= yield %>
+  </body>
+</html>

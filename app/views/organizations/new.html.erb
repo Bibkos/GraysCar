@@ -1,0 +1,15 @@
+<h1>New Organization</h1>
+    
+    <%= form_with model: @org do |f|%>
+    <div>
+        <%= f.label "Name of ORG" %>
+        <%= f.text_field :name, required: true, minlenght: 2, placeholder: "Org name ..." %>
+    </div>
+
+    <div>
+        <%= f.label "Number of ORG"%>
+        <%= f.text_field :taxpayer_identification_number, required: true, minlenght: 2, placeholder: "99999999" %>
+    </div>
+
+    <%= f.submit "Submit Org!", class: "btn btn-success"%>
+<% end %>
